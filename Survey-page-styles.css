@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background: url(https://images.unsplash.com/photo-1565498253128-c06e0488ddee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+     background-size: cover;
+  }
+  .topnav {
+    position: relative;
+    top: 0px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .topnav a {
+    font-family: 'Chelsea Market', cursive;
+    float: left;
+    display: block;
+    position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+    margin: 15px 10px;
+  }
+  .topnav a:hover {
+    background-color: #f2f2f2;
+    color: rgb(53, 0, 18);
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(53, 0, 18);
+    color: white;
+    border-radius: 20px;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+#logo{
+  width: 130px;
+  margin: 4px 20px;
+}
+  #title{
+    text-align: center;
+    font-size: 50px;
+    font-family: Lobster, cursive, fantasy;
+    font-weight: bold;
+    color: #4f0e38;
+    padding: 50px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
+    text-decoration: underline;
+  }
+  #description{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding; 0px;
+    margin: 0px 0px 60px 0px;
+    color: #4f0e38;
+  }
+  #survey-form{
+    background-color: #ffdbcd;
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    opacity: 0.93;
+    
+  }
+  #name{
+    display: block;
+    position: relative;
+    left: 5%;
+    padding: 40px 0px 40px 0px;
+  }
+  #email{
+    display: block;
+    position: relative;
+    left: 5%;
+    padding: 0px 0px 40px 0px;
+  }
+  #address{
+    display: block;
+    position: relative;
+    left: 5%;
+    padding: 0px 0px 40px 0px;
+  }
+  #number{
+    display: block;
+    position: relative;
+    left: 5%;
+    padding: 0px 0px 40px 0px;
+  }
+  .ask{
+    display: block;
+    position: relative;
+    left: 5%;
+    padding: 0px 0px 40px 0px;
+    font-size: 25px;
+    font-family: Lobster, cursive, fantasy;
+    font-weight: bold;
+    color: #4f0e38;
+  }
+  .choose{
+    display: block;
+    position: relative;
+    left: 5%;
+    padding: 40px 0px 10px 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: Lobster, cursive, fantasy;
+    font-weight: bold;
+    color: #4f0e38;
+  }
+  #pickup_date{
+    padding: 0px;
+  }
+  #name-label{
+    font-size: 25px;
+    font-family: Lobster, cursive, fantasy;
+    font-weight: bold;
+    color: #4f0e38;
+  }
+  #email-label{
+    font-size: 25px;
+    font-family: Lobster, cursive, fantasy;
+    font-weight: bold;
+    color: #4f0e38;
+  }
+  #address-label{
+    font-size: 25px;
+    font-family: Lobster, cursive, fantasy;
+    font-weight: bold;
+    color: #4f0e38;
+  }
+  #number-label{
+    font-size: 25px;
+    font-family: Lobster, cursive, fantasy;
+    font-weight: bold;
+    color: #4f0e38;
+  }
+  .textfield{
+    width: 800px;
+    max-width: 100%;
+    height: 40px;
+    margin: 5px 0px 0px 0px;
+    font-size: 20px;
+    padding: 0px 0px 0px 10px;
+    border-width: thick;
+    border-style: inset;
+    border-color: #ffccb3;
+  }
+  input:focus{
+    border-style: outset;
+    background: #fff7f0;
+  }
+  input[type="date"]
+  {
+    height: 40px;
+    width: 30%;
+    font-size: 20px;
+    border: thick inset #ffccb3;
+  }
+  .radio_options{
+    position:relative;
+    left: 6%;
+    font-size: 20px;
+    display: inline;
+    font-family: monospace, cursive;
+    color: #422e45;
+    font-weight: bold;
+  }
+  select{
+    position: relative;
+    left: 6%;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+  }
+  textarea{
+    position: relative;
+    left: 6%;
+    width: 90%;
+    height: 90px;
+    font-size: 20px;
+  }
+  #submit{
+    position:relative;
+    left: 10%;
+    width:80%;
+    padding: 18px;
+    margin: 30px 0px 30px 0px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4f0e38;
+    border-width: thick;
+    border-style: outset;
+    background-color: white;
+  }
+  #submit:hover{
+   background-color:#4f0e38; 
+    color:white;
+   letter-spacing: 10px;
+    border-style: inset;
+  }
+  @media screen and (max-width: 840px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+   
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;
+        flex-direction: column;
+        height: 73vh;
+      }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+
+  }

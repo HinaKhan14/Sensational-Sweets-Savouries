@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Survey-page-styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <title>Sensational Sweets & Savouries</title>
+    </head>
+    <body>
+      <div class="topnav" id="myTopnav">
+        <div id="logo_div">
+        <img id="logo" src="logo.png"/>
+        </div>
+        <div id="item_div">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="cakes_gallery.html" >CAKES GALLERY</a>
+        <a href="recipes.html" >RECIPES</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="order Form.html" class="active">ORDER NOW</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        </div>
+      </div>
+
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<h1 id="title">Sensational Sweets Order Form</h1>
+<p id="description">Thank you for your time</p>
+<form id="survey-form">
+  <div id="name">
+ <label id="name-label">Name: <br/>
+   <input class="textfield" type="text" max-length="30" placeholder="Enter Name" required/>
+  </label>
+  </div>
+  <div id="email">
+  <label id="email-label">Email: <br/>
+   <input type="email" class="textfield" max-length="50"   placeholder="Enter Email Address" required/>
+  </label>
+  </div>
+  <div id="address">
+  <label id="address-label" for="address">Address: <br/>
+   <input type="text" class="textfield" max-length="30" placeholder="Enter your house address" required/>
+  </label>
+  </div>
+  <div id="number">
+   <label id="number-label" for="number">Mobile Number: <br/>
+   <input type="number" class="textfield" name="mobile-number" max-length="11"  placeholder="Enter your active mobile number" required/>
+  </label>
+  </div>
+  <label class="ask">Order Date<br/>
+   <input type="date" required/>
+  </label>
+  
+  <label class="ask" id="pickup_date">Pick Up Date<br/>
+   <input type="date" required/>
+  </label>
+  
+  <p class="choose"> Select Type Of Cake </p>
+  <div class="radio_options">
+  <label>
+  <input type="radio" name="cake_type" value="Simple Cake" checked /> Simple Cake <br/>
+  </label>
+  <label> 
+  <input type="radio" name="cake_type" value="Theme Cake" /> Theme Cake <br/>
+  </label>
+  <label>
+  <input type="radio" name="cake_type" value="Cup cake" /> Cup Cakes <br/>
+  </label>
+    <label>
+  <input type="radio" name="cake_type" value="Cup cake" /> Mug Cake <br/>
+  </label>
+  </div>
+  <p class="choose">Select the Flavour</p>
+  <select id="dropdown" name="flavours">
+     <option value="Chocolate">Chocolate</option>
+    <option value="Milk Chocolate">Milk Chocolate</option>
+    <option value="Dark Chocolate">Dark Chocolate</option>
+    <option value="White Chocolate">White Chocolate</option>
+    <option value="Vanilla" selected>Vanilla</option>
+    <option value="Marble">Marble</option>
+    <option value="Rainbow">Rainbow</option>
+    <option value="Red Velvet">Red Velvet</option>
+    <option value="Coconut">Coconut</option>
+    <option value="Lemon">Lemon</option>
+    <option value="Orange">Orange</option>
+    <option value="Strawberry">Strawberry</option>
+  </select>
+  
+  <p class="choose" >Select the Size Of Cake</p>
+  <select name="Cake_Size" >
+     <option value="2 pounds">2 Pounds</option>
+    <option value="2 pounds">3 Pounds</option>
+    <option value="2 pounds">4 Pounds</option>
+    <option value="2 pounds">5 Pounds</option>
+    <option value="2 pounds">6 Pounds</option>
+    <option value="2 pounds">7 Pounds</option>
+    <option value="2 pounds">8 Pounds</option>
+    <option value="2 pounds">9 Pounds</option>
+    <option value="2 pounds">10 Pounds</option>
+    <option value="2 pounds">11 Pounds</option>
+    <option value="2 pounds">12 Pounds</option>
+    <option value="2 pounds">13 Pounds</option>
+    <option value="2 pounds">14 Pounds</option>
+    <option value="2 pounds">15 Pounds</option>
+    <option value="2 pounds">16 Pounds</option>
+    <option value="2 pounds">17 Pounds</option>
+    <option value="2 pounds">18 Pounds</option>
+    <option value="2 pounds">19 Pounds</option>
+    <option value="2 pounds">20 Pounds</option>
+    
+  </select>
+  
+  
+  <p class="choose" > Filling </p>
+  <div class="radio_options">
+  <label>
+  <input type="radio" name="cake_filling" value="Dark chocolate ganache" /> Dark Chocolate Ganache <br/>
+  </label>
+  <label>
+  <input type="radio" name="cake_filling" value="Milk chocolate ganache" checked /> Milk Chocolate Ganache <br/>
+  </label>
+  <label>
+  <input type="radio" name="cake_filling" value="White chocolate ganache" /> White Chocolate Ganache <br/>
+  </label>
+  <label>
+  <input type="radio" name="cake_filling" value="Buttercream" /> Buttercream <br/>
+  </label>
+  </div>
+<p class="choose" >Extra Decorations(if you want): </p>
+  <div class="radio_options">
+    <label>
+<input type="checkbox" name="extras" value="KitKat"/>KitKat<br/>
+    </label>
+    <label>
+<input type="checkbox" name="extras" value="raffaello"/>Raffaellot
+    </label>
+    <br/>
+    <label>
+<input type="checkbox" name="extras" value="snickers"/>Snickers<br/>
+    </label>
+    <label>
+<input type="checkbox" name="extras" value="Dairymilk"/>Dairy Milk<br/>
+    </label>
+      </div>
+  
+   <p class="choose" > More Information About Your Cake </p>
+  <textarea name="comments" cols="40" rows="5" placeholder="Enter your comments.."></textarea>
+  <br/>
+  <input id="submit" type="submit" name="submit" value="Submit"/>
+</form>
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    </body>
+</html>
